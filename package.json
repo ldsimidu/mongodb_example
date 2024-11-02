@@ -4,6 +4,9 @@
   "description": "Criação de um projeto para entendimento da integração do MongoDB com HTML, CSS e JavaScript",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon server.js",
+    "live": "live-server --port=3000",
+    "dev": "concurrently \"npm run start\" \"npm run live\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,5 +17,11 @@
     "mongoose": "^8.8.0",
     "nodemon": "^3.1.7",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "nodemon": "^2.0.4"
   }
 }
+
+
